@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cyber Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cyber Attack Wiki</h1>
+        <input type="text" id="search" placeholder="Search attacks...">
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Attack Types</h2>
+            <ul id="attack-list">
+                <!-- Filled by JavaScript -->
+            </ul>
+        </aside>
+
+        <article id="content">
+            <div class="welcome-message">
+                <h2>Welcome to thee Cybersecurity Wiki</h2>
+                <p>Select an attack from the sidebar to learn about it.</p>
+            </div>
+            
+            <div id="attack-content" style="display:none;">
+                <h2 id="attack-title"></h2>
+                <div id="attack-description"></div>
+                <h3>Example Code</h3>
+                <pre><code id="attack-code"></code></pre>
+                <div class="visualization" id="attack-visual"></div>
+                <h3>Prevention</h3>
+                <div id="attack-prevention"></div>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
